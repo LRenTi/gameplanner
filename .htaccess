@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^spielplan$ index.php?include=gameplan [L]
