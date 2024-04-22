@@ -2,12 +2,10 @@ Create database buf
 
 create table ACCOUNTS (
     ID int not null AUTO_INCREMENT primary key,
-    USERNAME varchar(255) not null UNIQUE,
+    EMAIL varchar(255)not null UNIQUE,
     PASSWORD varchar(255) not null,
-    ANREDE varchar(255),
     VORNAME varchar(255),
     NACHNAME varchar(255),
-    EMAIL varchar(255),
     TELEFON varchar(16),
     ROLE int not null -- -1 = gesperrt, 0 = Gast, 1 = Mitarbeiter, 2 = Admin
 )
