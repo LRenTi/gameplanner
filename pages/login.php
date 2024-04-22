@@ -53,7 +53,7 @@
                             <div class="d-flex justify-content-center align-items-center mt-4">
                                 <span class="fw-normal">
                                     Nicht registriert?
-                                    <a href="./sign-up.html" class="fw-bold">Erstelle einen Account</a>
+                                    <a href="register" class="fw-bold">Erstelle einen Account</a>
                                 </span>
                             </div>
                         </div>

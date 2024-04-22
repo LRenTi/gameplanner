@@ -7,8 +7,11 @@
 <?php
       // Wenn nicht eingeloggt dann ...
                 if (!isset($_SESSION["usernameSession"])) {
-                    if (!isset($_GET["include"]) || $_GET["include"] !== "login") {
-                        echo "<a type=\"button\" href=\"login\"class=\"btn btn-primary\">Login</a>";
+                    if (!(!isset($_GET["include"]) || ($_GET["include"] == "login") || ($_GET["include"] == "register"))) {
+                        echo "<div class=\"d-flex gap-2\">";
+                        echo "<a type=\"button\" href=\"login\"class=\"btn btn-secondary\">Login</a>";
+                        echo "<a type=\"button\" href=\"register\"class=\"btn btn-primary\">Registrieren</a>";
+                        echo "</div>";
                     }
                 } else { // Wenn eingeloggt dann ...
                     // Holt die Daten des eingeloggten Users
