@@ -48,7 +48,7 @@
 
                 if ($_GET["include"] == "dashboard")
 				{
-					include("pages/dasboard.php");
+					include("pages/dashboard.php");
 				}
                 else if ($_GET["include"] == "gameplan")
 				{

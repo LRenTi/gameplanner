@@ -1,2 +1,3 @@
 RewriteEngine On
 RewriteRule ^spielplan$ index.php?include=gameplan [L]
+RewriteRule ^login$ index.php?include=login [L]
