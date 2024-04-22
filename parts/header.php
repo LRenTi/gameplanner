@@ -7,7 +7,7 @@
 <?php
       // Wenn nicht eingeloggt dann ...
                 if (!isset($_SESSION["usernameSession"])) {
-                    if (!($_GET["include"] == "login")) {
+                    if (!isset($_GET["include"]) || $_GET["include"] !== "login") {
                         echo "<a type=\"button\" href=\"login\"class=\"btn btn-primary\">Login</a>";
                     }
                 } else { // Wenn eingeloggt dann ...

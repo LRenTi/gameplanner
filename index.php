@@ -73,7 +73,7 @@
 			}
             
             else {
-                include('pages/home.php');
+                include('pages/dashboard.php');
                 }
         ?>
         </main>

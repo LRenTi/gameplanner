@@ -53,7 +53,8 @@
             </a>
         </li>
         <!-- Dashboard -->
-        <li class="nav-item <?php echo ($_GET['include'] == 'dashboard') ? 'active' : ''; ?>">
+        <li class="nav-item <?php echo ((isset($_GET['include']) && ($_GET['include'] == 'dashboard'))) ? 'active' : ''; ?>">
+
             <a href="index.php?include=dashboard" class="nav-link">
             <span class="sidebar-icon">
                 <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +66,7 @@
             </a>
         </li>
         <!-- Kalender/Spielplan -->
-        <li class="nav-item <?php echo ($_GET['include'] == 'gameplan') ? 'active' : ''; ?>">
+        <li class="nav-item <?php echo (isset($_GET['include']) && $_GET['include'] == 'gameplan') ? 'active' : ''; ?>">
             <a href="spielplan" class="nav-link d-flex justify-content-between">
                 <span>
                     <span class="sidebar-icon">
